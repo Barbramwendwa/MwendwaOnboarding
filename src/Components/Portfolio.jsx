@@ -19,7 +19,7 @@ import React from "react";
  * Need an image? Check out https://unsplash.com to download a photo you
  * freely use on your site.
  */
-import image from "../flowers.jpeg";
+import image from "../images/flowers.jpg";
 
 const imageAltText = "An opening with a bouquet at a place";
 
@@ -32,20 +32,17 @@ const imageAltText = "An opening with a bouquet at a place";
 const projectList = [
   {
     title: "Ms Learn $ MLSA in a nutshell",
-    description:
-      "What Microsoft learn basically entails and how to benefit from the platfrom.",
+    description: "What Microsoft learn basically entails and how to benefit from the platfrom.",
     url: "https://www.linkedin.com/posts/barbramwendwa_microsoft-learn-and-ms-certifications-join-activity-7163784836543983616--IOU?utm_source=share&utm_medium=member_desktop",
   },
-    {
+  {
     title: "",
-    description:
-      "",
+    description: "",
     url: "",
   },
   {
     title: "",
-    description:
-      "",
+    description: "",
     url: "",
   },
 ];
@@ -58,7 +55,12 @@ const Portfolio = () => {
         <div style={{ maxWidth: "40%", alignSelf: "center" }}>
           <img
             src={image}
-            style={{ height: "90%", width: "100%", objectFit: "cover" }}
+            style={{
+              height: "90%",
+              width: "100%",
+              objectFit: "cover",
+              animation: "1s ease-out 0s 1 slideIn",
+            }}
             alt={imageAltText}
           />
         </div>
